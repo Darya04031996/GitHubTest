@@ -16,7 +16,7 @@ public class HoverGitTest {
     }
     @Test
     void gitPageTest() {
-        open("/");
+        open(" ");
         $(byTagAndText("button", "Solutions")).hover();
         $(byTagAndText("a", "Enterprises")).click();
         $(".enterprise-hero-heading").shouldHave(text("The AI-powered developer platform"));
