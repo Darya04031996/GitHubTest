@@ -15,7 +15,7 @@ public class HerokuappTest {
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
     }
     @Test
-    void TestDAndD() {
+    void testDAndD() {
         open("/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));

@@ -15,7 +15,7 @@ public class HoverGitTest {
         Configuration.baseUrl = "https://github.com";
     }
     @Test
-    void GitPageTest() {
+    void gitPageTest() {
         open("/");
         $(byTagAndText("button", "Solutions")).hover();
         $(byTagAndText("a", "Enterprises")).click();
